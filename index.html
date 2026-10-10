@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Portfolio de Clément Hayot, étudiant en cybersécurité à Bordeaux."
+  >
+  <title>Clément Hayot — Cybersécurité</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <a href="#accueil" class="logo">
+        <span>CH</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="#apropos">Profil</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="sidebar-bottom">
+      <p>Étudiant en</p>
+      <strong>CYBERSÉCURITÉ</strong>
+      <span class="location">Bordeaux, France</span>
+    </div>
+  </aside>
+
+  <header class="mobile-header">
+    <a href="#accueil" class="mobile-logo">CH</a>
+
+    <button
+      class="menu-button"
+      id="menu-button"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navigation mobile">
+    <a href="#apropos">Profil</a>
+    <a href="#projets">Projets</a>
+    <a href="#competences">Compétences</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">PORTFOLIO — 2026</p>
+
+        <h1>
+          Clément<br>
+          <span>HAYOT</span>
+        </h1>
+
+        <p class="hero-role">CYBERSÉCURITÉ · DÉVELOPPEMENT · SYSTÈMES</p>
+
+        <p class="hero-text">
+          Étudiant en cybersécurité, je développe des projets web et des
+          applications en mettant l’accent sur la sécurité, la curiosité et
+          l’apprentissage continu.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projets" class="button button-dark">Voir mes projets</a>
+          <a href="#contact" class="button button-light">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img
+            src="assets/Photo CV2.jpg"
+            alt="Portrait de Clément Hayot"
+          >
+        </div>
+
+        <div class="hero-number">01</div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="apropos">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <div>
+          <p class="eyebrow">MON PROFIL</p>
+          <h2>À propos</h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <p class="large-text">
+          Je m’intéresse à l’informatique depuis plusieurs années et je me
+          forme aujourd’hui à la cybersécurité, au développement web et aux
+          environnements systèmes.
+        </p>
+
+        <div class="about-details">
+          <p>
+            J’aime comprendre comment fonctionnent les applications afin de
+            pouvoir les développer, les tester et les sécuriser. Les projets de
+            groupe m’ont aussi permis de progresser en organisation, Git et
+            collaboration.
+          </p>
+
+          <dl class="info-list">
+            <div>
+              <dt>Formation</dt>
+              <dd>Bachelor Cybersécurité — Ynov Campus Bordeaux</dd>
+            </div>
+
+            <div>
+              <dt>Localisation</dt>
+              <dd>Bordeaux et ses alentours</dd>
+            </div>
+
+            <div>
+              <dt>Disponibilité</dt>
+              <dd>Ouvert aux projets et opportunités étudiantes</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="projets">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <div>
+          <p class="eyebrow">RÉALISATIONS</p>
+          <h2>Projets sélectionnés</h2>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-featured">
+            <div class="project-top">
+            <p class="project-index">01</p>
+            <p class="project-status">EN COURS</p>
+            </div>
+
+            <h3>Messagerie sécurisée</h3>
+
+            <p>
+            Conception d’une messagerie destinée à un environnement
+            d’entreprise. Le projet intègre une connexion par clé USB et code,
+            avec contrôle de l’accès au réseau Wi-Fi.
+            </p>
+
+            <ul class="tag-list">
+            <li>Sécurité</li>
+            <li>Authentification</li>
+            <li>Réseau</li>
+            </ul>
+
+            <a href="projets/messagerie-securisee.html" class="project-link">
+            Voir le projet
+            <span>↗</span>
+            </a>
+        </article>
+
+        <article class="project-card">
+            <div class="project-top">
+            <p class="project-index">02</p>
+            <p class="project-status">TERMINÉ</p>
+            </div>
+
+            <h3>Prévention cyber</h3>
+
+            <p>
+            Création d’un site web local comprenant des modules de
+            sensibilisation à la cybersécurité pour les membres d’une
+            entreprise.
+            </p>
+
+            <ul class="tag-list">
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>Sensibilisation</li>
+            </ul>
+
+            <a href="projets/prevention-cyber.html" class="project-link">
+            Voir le projet
+            <span>↗</span>
+            </a>
+        </article>
+
+        <article class="project-card">
+            <div class="project-top">
+            <p class="project-index">03</p>
+            <p class="project-status">EN COURS</p>
+            </div>
+
+            <h3>Livre de recettes</h3>
+
+            <p>
+            Site internet Dockerisé qui répertie des recettes de cuisine.
+            </p>
+
+            <ul class="tag-list">
+            <li>React</li>
+            <li>Python</li>
+            <li>Docker</li>
+            </ul>
+
+            <a href="projets/livre-de-recette.html" class="project-link">
+            Voir le projet
+            <span>↗</span>
+            </a>
+        </article>
+
+        <article class="project-card">
+            <div class="project-top">
+            <p class="project-index">04</p>
+            <p class="project-status">À VENIR</p>
+            </div>
+
+            <h3>Projet à venir</h3>
+
+            <p>
+            Ajoute un projet personnel ou académique en expliquant son objectif,
+            les technologies utilisées et ce que tu as appris.
+            </p>
+
+            <ul class="tag-list">
+            <li>À définir</li>
+            </ul>
+
+            <a href="projets/projet-04.html" class="project-link">
+            Voir le projet
+            <span>↗</span>
+            </a>
+        </article>
+
+        <article class="project-card">
+            <div class="project-top">
+            <p class="project-index">05</p>
+            <p class="project-status">À VENIR</p>
+            </div>
+
+            <h3>Projet à venir</h3>
+
+            <p>
+            Présente ici un futur projet technique, un outil de cybersécurité ou
+            une application développée pendant ta formation.
+            </p>
+
+            <ul class="tag-list">
+            <li>À définir</li>
+            </ul>
+
+            <a href="projets/projet-05.html" class="project-link">
+            Voir le projet
+            <span>↗</span>
+            </a>
+        </article>
+
+        <article class="project-card">
+            <div class="project-top">
+            <p class="project-index">06</p>
+            <p class="project-status">À VENIR</p>
+            </div>
+
+            <h3>Projet à venir</h3>
+
+            <p>
+            Un emplacement supplémentaire pour enrichir ton portfolio au fil de
+            tes projets, stages et réalisations personnelles.
+            </p>
+
+            <ul class="tag-list">
+            <li>À définir</li>
+            </ul>
+
+            <a href="projets/projet-06.html" class="project-link">
+            Voir le projet
+            <span>↗</span>
+            </a>
+        </article>
+        </div>
+    </section>
+
+    <section class="section section-light" id="competences">
+      <div class="section-heading">
+        <p class="section-number">04</p>
+        <div>
+          <p class="eyebrow">OUTILS ET SAVOIR-FAIRE</p>
+          <h2>Compétences</h2>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-column">
+          <h3>Développement</h3>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Go</li>
+            <li>SQL / SQLite</li>
+          </ul>
+        </article>
+
+        <article class="skill-column">
+          <h3>Systèmes & DevOps</h3>
+          <ul>
+            <li>Linux</li>
+            <li>Docker</li>
+            <li>Git / GitHub</li>
+            <li>VS Code</li>
+            <li>Réseaux — notions</li>
+          </ul>
+        </article>
+
+        <article class="skill-column">
+          <h3>Cybersécurité</h3>
+          <ul>
+            <li>Sensibilisation cyber</li>
+            <li>Bonnes pratiques web</li>
+            <li>Authentification</li>
+            <li>CTF — apprentissage</li>
+            <li>Gestion des droits</li>
+          </ul>
+        </article>
+
+        <article class="skill-column">
+          <h3>Langues</h3>
+          <ul>
+            <li>Français — natif</li>
+            <li>Anglais — C1</li>
+            <li>Allemand — A2</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-gray" id="parcours">
+      <div class="section-heading">
+        <p class="section-number">05</p>
+        <div>
+          <p class="eyebrow">FORMATION ET EXPÉRIENCE</p>
+          <h2>Parcours</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <p class="timeline-date">2026 — aujourd’hui</p>
+          <div>
+            <h3>Bachelor 2 Cybersécurité</h3>
+            <p>Bordeaux Ynov Campus</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <p class="timeline-date">2026</p>
+          <div>
+            <h3>Stage — Symbiose</h3>
+            <p>
+              Découverte de la gestion des droits sur plus de 80 appareils
+              d’un réseau sécurisé.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <p class="timeline-date">2025 — 2026</p>
+          <div>
+            <h3>Bachelor 1 Cybersécurité</h3>
+            <p>Bordeaux Ynov Campus</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <p class="timeline-date">2022 — 2025</p>
+          <div>
+            <h3>Baccalauréat général</h3>
+            <p>Lycée Philippe Cousteau</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <p class="eyebrow">UN PROJET, UNE OPPORTUNITÉ ?</p>
+      <h2>Restons en contact.</h2>
+
+      <a class="contact-mail" href="mailto:clement.hayot08@gmail.com">
+        clement.hayot08@gmail.com
+      </a>
+
+      <div class="contact-links">
+        <a href="https://github.com/ClemYnov" target="_blank" rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+
+        <a href="mailto:clement.hayot08@gmail.com">
+          E-mail ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Clément Hayot</p>
+    <p>Portfolio — Cybersécurité</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
